@@ -1,0 +1,55 @@
+/*========== ROOT ==========*/
+:root {
+    /*========== COLORS ==========*/
+    --black-100: #191919;
+
+    --white-100: #9B9B9B;
+    --white-200: #D4D4D4;
+}
+
+/*========== Global ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+}
+body {
+    background-color: var(--black-100);
+    color: var(--white-200);
+}
+
+/*========== MAIN ==========*/
+main {
+    min-height: 100vh;
+    min-width: 26.25rem;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 6.25rem 0;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-photo {
+    width: 10rem;
+    border-radius: 100%;
+    box-shadow: 0 0 0.375rem var(--white-100);
+}
+.profile h1 {
+    font-size: 2rem;
+}
+.profile strong {
+    font-size: 1.25rem;
+}
+.profile ul {
+    display: flex;
+    margin-top: 2rem;
+    gap: 2rem;
+}
+.link-photo {
+    width: 2rem;
+}
