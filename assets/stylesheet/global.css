@@ -62,5 +62,5 @@ main {
 }
 .link-container:hover {
     box-shadow: 0 0.1rem 0 var(--white-100);
-    transition: 0.2s;
+    transition: 0.3s;
 }
