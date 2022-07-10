@@ -24,7 +24,7 @@ body {
 /*========== MAIN ==========*/
 main {
     min-height: 100vh;
-    min-width: 26.25rem;
+    min-width: 25rem;
     max-width: 50rem;
     margin: 0 auto;
     padding: 6.25rem 0;
@@ -61,6 +61,6 @@ main {
     font-size: 0.8rem;
 }
 .link-container:hover {
-    box-shadow: 0 0.1rem 0 var(--white-100);
+    border-bottom: 0.063rem solid var(--white-100);
     transition: 0.3s;
 }
