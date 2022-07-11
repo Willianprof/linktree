@@ -24,7 +24,6 @@ body {
 /*========== MAIN ==========*/
 main {
     min-height: 100vh;
-    min-width: 25rem;
     max-width: 50rem;
     margin: 0 auto;
     padding: 6.25rem 0;
