@@ -52,7 +52,7 @@ div strong {
 div nav ul {
     display: flex;
     margin-top: 2rem;
-    gap: 2rem;
+    gap: 1rem;
 }
 .link-photo {
     width: 2rem;
