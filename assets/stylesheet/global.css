@@ -1,10 +1,16 @@
-/*========== ROOT ==========*/
-:root {
-    /*========== COLORS ==========*/
-    --black-100: #191919;
-
-    --white-100: #9B9B9B;
-    --white-200: #D4D4D4;
+/*========== REM measure ==========*/
+/* For screens bigger than 1080px: 16px(defalt) */
+/* For screens smaller than 1080px*/
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%; /* 15px */
+    }
+}
+/* Para telas mmenores que 720px*/
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%; /* 14px */
+    }
 }
 
 
@@ -16,53 +22,61 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'DM Sans', sans-serif;
 }
 body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    max-width: 50rem;
     margin: 0 auto;
-    padding: 6.25rem 0;
-    background-color: var(--black-100);
-    color: var(--white-200);
+    background: rgb(25,25,25);
+    background: linear-gradient(0deg, rgba(25,25,25,1) 0%, rgba(34,34,34,1) 50%, rgba(57,57,57,1) 100%);
+    font-family: 'DM Sans', sans-serif;
+    color: #D4D4D4;
+}
+img {
+    width: 100%;
+    height: auto;
 }
 
 
+
 /*========== Main ==========*/
-main div {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .profile-photo {
-    width: 10rem;
-    border-radius: 100%;
-    box-shadow: 0 0 0.375rem var(--white-100);
+    width: 12rem;
+    border-radius: 28% 72% 42% 58% / 41% 36% 64% 59% ;
     margin-bottom: 1rem;
 }
-main div h1 {
+header {
+    text-align: center;
+}
+h1 {
     font-size: 2rem;
 }
-div strong {
+strong {
     font-size: 1.25rem;
 }
-div nav ul {
+ul {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 2rem;
-    gap: 1rem;
-}
-.link-photo {
-    width: 2rem;
+    gap: 1.5rem;
 }
 .link-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: var(--white-100);
+    color: #9B9B9B;
     font-size: 0.8rem;
+}
+.link-photo {
+    width: 2rem;
 }
 .link-container:hover {
     transition: 0.3s;
